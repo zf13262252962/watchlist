@@ -9,6 +9,11 @@ def index():
     return '<h1>Welcome to My Watchlist!</h1>'
 
 
+@app.route('/hello/<name>')
+def hello(name):
+    return 'hello, %s' % name
+
+
 @app.route('/to')
-def totoro():
+def dragon():
     return render_template('test.html')
